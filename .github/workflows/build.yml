@@ -22,6 +22,7 @@ jobs:
     - name: Run the Cake script
       uses: cake-build/cake-action@v2
       with:
+        cake-version: 4.0.0
         script-path: build.cake
     - name: Zip Linux x64
       if: matrix.platform == 'ubuntu-latest'
